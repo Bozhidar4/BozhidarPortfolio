@@ -1,0 +1,110 @@
+﻿body {
+}
+
+header {
+    border-bottom: 2px solid #1abc9c;
+}
+
+#parallax {
+    background-image: url('../img/20170714_112217.jpg');
+    filter: brightness(60%);
+    -webkit-filter: brightness(60%);
+}
+
+.maintitle {
+    margin-top: -50px;
+}
+
+.bio {
+    width: 100%;
+    color: black;
+    text-align: justify;
+}
+
+.certificates {
+    height: 200px;
+}
+
+h1 > span > b {
+    color: #1abc9c;
+}
+
+.justtitle {
+    padding-bottom: 20px;
+}
+
+.logo > img {
+    height: 150px;
+    width: 150px;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.logoContainer {
+    height: 150px;
+    width: 100%;
+    background-color: yellow;
+}
+
+.image-responsive {
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+.timelinesection {
+    background-color: #1abc9c;
+}
+
+.uni {
+    width: 100px;
+    margin-left: 20px;
+}
+
+.education {
+    width: 80px;
+    height: 80px;
+}
+
+.uni > h3 {
+    font-size: 15px;
+}
+
+.about-me {
+    color: #1abc9c;
+}
+
+.myself {
+    border-radius: 1%;
+    position: center;
+    border: 3px solid #1abc9c;
+}
+
+article {
+    text-align: justify;
+}
+
+.my-image {
+    width: 100%;
+}
+
+.img-back {
+    margin: auto;
+    width: 50%;
+    float: none;
+    margin-bottom: 0;
+}
+
+.uni-back {
+    padding-left: 50px;
+}
+
+#credits {
+    margin-top: 20px;
+}
+
+.logos {
+    background-color: white;
+    padding-left: 30px;
+    width: 300px;
+    box-shadow: 3px 3px 20px black;
+}
