@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>BMI Calculator</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/bmiCalculator.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Body Mass Index Calculator</h1>
+    </header>
+    <div class="container">
+
+        <!-- Form -->
+        <form name="bmiForm" class="form-horizontal">
+
+            <!-- User input -->
+            <!-- User weight -->
+            <div class="form-group">
+                <label class="control-label col-sm-2">Please enter your weight (kg)</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" placeholder="Your weight" autofocus name="weight" required>
+                </div>
+            </div>
+
+            <!-- User height -->
+            <div class="form-group">
+                <label class="control-label col-sm-2">Please enter your height (cm)</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" placeholder="Your height" name="height" required>
+                </div>
+            </div>
+
+            <!-- Calculate button -->
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <input type="button" value="Submit" class="submitButton" onClick="calculateBmi()">
+                </div>
+            </div>
+
+            <!-- Results -->
+            <!-- User Bmi -->
+            <div class="form-group">
+                <label class="control-label col-sm-2">Your BMI: </label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control resultBmi resultBmiText" placeholder="Your BMI" name="bmi" readonly>
+                </div>
+            </div>
+
+            <!-- User information -->
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd">Information: </label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control resultBmi resultInfo" placeholder="Information" name="meaning" readonly>
+                </div>
+            </div>
+
+            <!-- Reset button -->
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="reset" class="submitButton">Reset</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/bmiCalculator.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery-1.9.1.intellisense.js"></script>
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+</body>
+</html>

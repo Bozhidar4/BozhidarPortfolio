@@ -33,6 +33,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -41,6 +42,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -94,22 +96,75 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\css\bmiCalculator.css" />
+    <Content Include="assets\css\bootstrap.css" />
     <Content Include="assets\css\cubeStyle.css" />
+    <Content Include="assets\css\diceStyles\diceStyle.css" />
+    <Content Include="assets\css\diceStyles\result.css" />
+    <Content Include="assets\css\highAdventures.css" />
+    <Content Include="assets\css\modalWindow.css" />
+    <Content Include="assets\css\taxCalculator.css" />
     <Content Include="assets\css\upButton.css" />
-    <Content Include="assets\img\favicon1.png" />
-    <Content Include="assets\img\favicon2.png" />
+    <Content Include="assets\css\xmas.css" />
+    <Content Include="assets\js\background.js" />
+    <Content Include="assets\js\bmiCalculator.js" />
+    <Content Include="assets\js\dice.js" />
+    <Content Include="assets\js\dice\dice.js" />
+    <Content Include="assets\js\dice\result.js" />
+    <Content Include="assets\js\highAdventures.js" />
+    <Content Include="assets\js\jquery.backgroundMove.js" />
+    <Content Include="assets\js\logo.js" />
+    <Content Include="assets\js\navbar.js" />
+    <Content Include="assets\js\taxCalculator.js" />
+    <Content Include="assets\js\xmas.js" />
+    <Content Include="bmiCalculator.html" />
+    <Content Include="crab\autorun.inf">
+      <BrowseToURL>http://bozhidar-rangelov.co.uk/crab/CrabShooterOnline.xbap</BrowseToURL>
+    </Content>
     <Content Include="cube.html" />
     <Content Include="assets\css\customStyle.css" />
     <Content Include="assets\css\downButton.css" />
     <Content Include="assets\css\skillBarStyle.css" />
-    <Content Include="assets\img\20170714_112217.jpg" />
-    <Content Include="assets\img\csharplogo2.png" />
-    <Content Include="assets\img\DSC_03111.jpg" />
     <Content Include="assets\js\downButton.js" />
     <Content Include="assets\js\jquery.scrollTo.min.js" />
     <Content Include="assets\js\skillBar.js" />
     <Content Include="assets\js\timeLine.js" />
+    <Content Include="dice.html" />
     <Content Include="fonts\bootstrap\glyphicons-halflings-regular.svg" />
+    <Content Include="highAdventures.html" />
+    <Content Include="images\background.jpg" />
+    <Content Include="images\background2.jpg" />
+    <Content Include="images\background3.jpg" />
+    <Content Include="images\bozhidar.jpg" />
+    <Content Include="images\Computer Parts.png" />
+    <Content Include="images\CrabScreen.png" />
+    <Content Include="images\CrabScreen2.png" />
+    <Content Include="images\darkenkeybord60.jpg" />
+    <Content Include="images\favicon55.png" />
+    <Content Include="images\healthyfoodsscreen.png" />
+    <Content Include="images\kia-logo.jpg" />
+    <Content Include="images\MarvelCharacters.png" />
+    <Content Include="images\MarvelHeroes.png" />
+    <Content Include="images\me4.png" />
+    <Content Include="images\me5.png" />
+    <Content Include="images\moon.png" />
+    <Content Include="images\nuts.jpg" />
+    <Content Include="images\planet.jpg" />
+    <Content Include="images\project1.png" />
+    <Content Include="images\road.jpg" />
+    <Content Include="images\santa.png" />
+    <Content Include="images\santa3.png" />
+    <Content Include="images\santa4.png" />
+    <Content Include="images\satellite.png" />
+    <Content Include="images\satellite3.png" />
+    <Content Include="images\satellite4.png" />
+    <Content Include="images\Sergi.jpg" />
+    <Content Include="images\talkingprogram.png" />
+    <Content Include="images\talkingprogramscreen.png" />
+    <Content Include="images\work.png" />
+    <Content Include="images\xmas2.jpg" />
+    <Content Include="images\xmas3.jpg" />
+    <Content Include="index2.html" />
     <Content Include="javascripts\bootstrap-sprockets.js" />
     <Content Include="javascripts\bootstrap.js" />
     <Content Include="javascripts\bootstrap.min.js" />
@@ -125,6 +180,7 @@
     <Content Include="javascripts\bootstrap\tab.js" />
     <Content Include="javascripts\bootstrap\tooltip.js" />
     <Content Include="javascripts\bootstrap\transition.js" />
+    <Content Include="assets\js\modalWindow.js" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -138,6 +194,28 @@
     <Content Include="assets\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="assets\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="assets\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="diceResult.html" />
+    <Content Include="Crab Shooter.rar" />
+    <Content Include="crab\CrabShooterOnline.xbap" />
+    <Content Include="crab\Application Files\CrabShooterOnline_1_0_0_0\CrabShooter.dll.deploy" />
+    <Content Include="crab\Application Files\CrabShooterOnline_1_0_0_0\CrabShooterOnline.exe.deploy" />
+    <Content Include="crab\Application Files\CrabShooterOnline_1_0_0_0\CrabShooterOnline.exe.manifest" />
+    <Content Include="crab\Application Files\CrabShooterOnline_1_0_0_0\CrabShooterOnline.xbap" />
+    <Content Include="crab\Application Files\CrabShooterOnline_1_0_0_1\CrabShooter.dll.deploy" />
+    <Content Include="crab\Application Files\CrabShooterOnline_1_0_0_1\CrabShooterOnline.exe.deploy" />
+    <Content Include="crab\Application Files\CrabShooterOnline_1_0_0_1\CrabShooterOnline.exe.manifest" />
+    <Content Include="crab\Application Files\CrabShooterOnline_1_0_0_1\CrabShooterOnline.xbap" />
+    <Content Include="crab\Application Files\CrabShooterOnline_1_0_0_2\CrabShooter.dll.deploy" />
+    <Content Include="crab\Application Files\CrabShooterOnline_1_0_0_2\CrabShooterOnline.exe.deploy" />
+    <Content Include="crab\Application Files\CrabShooterOnline_1_0_0_2\CrabShooterOnline.exe.manifest" />
+    <Content Include="crab\Application Files\CrabShooterOnline_1_0_0_2\CrabShooterOnline.xbap" />
+    <Content Include="Marvel-Characters.rar" />
+    <Content Include="assets\fonts\Booklet Cordel.ttf" />
+    <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.1.1.js" />
+    <Content Include="Scripts\jquery-3.1.1.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
     <Content Include="stylesheets\_bootstrap.scss" />
     <Content Include="stylesheets\_bootstrap-sprockets.scss" />
     <Content Include="stylesheets\_bootstrap-mincer.scss" />
@@ -223,6 +301,9 @@
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
     <Content Include="particlesjs-config.json" />
+    <Content Include="Talking program.rar" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.1.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -245,6 +326,9 @@
     <Content Include="assets\js\validate.js" />
     <Content Include="assets\js\waypoints.min.js" />
     <Content Include="index.html" />
+    <Content Include="taxCalculator.html" />
+    <Content Include="video\CrabShooter.mp4" />
+    <Content Include="video\CrabShooter.wmv" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -254,6 +338,9 @@
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />

@@ -19,7 +19,7 @@ section {
 }*/
 
 .up-arrow{
-    margin-top: 40px;
+    margin-top: 45px;
 }
 
 
@@ -112,46 +112,46 @@ section {
 #section03 a {
   padding-top: 60px;
 }
-#section03 a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 46px;
-  height: 46px;
-  margin-left: -23px;
-  border: 1px solid #fff;
-  border-radius: 100%;
-  box-sizing: border-box;
-}
-#section03 a span::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  content: '';
-  width: 16px;
-  height: 16px;
-  margin: -12px 0 0 -8px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  box-sizing: border-box;
-}
-#section03 a span::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  content: '';
-  width: 44px;
-  height: 44px;
-  box-shadow: 0 0 0 0 rgba(255,255,255,.1);
-  border-radius: 100%;
-  opacity: 0;
-  -webkit-animation: sdb03 3s infinite;
-  animation: sdb03 3s infinite;
-  box-sizing: border-box;
-}
+    #section03 a span {
+        position: absolute;
+        top: 150px;
+        left: 140px;
+        width: 46px;
+        height: 46px;
+        margin-left: -33px;
+        border: 3px solid #000;
+        border-radius: 100%;
+        box-sizing: border-box;
+    }
+        #section03 a span::after {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            content: '';
+            width: 16px;
+            height: 16px;
+            margin: -12px 0 0 -8px;
+            border-left: 3px solid #000;
+            border-bottom: 3px solid #000;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            box-sizing: border-box;
+        }
+        #section03 a span::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            content: '';
+            width: 44px;
+            height: 44px;
+            box-shadow: 0 0 0 0 rgba(0,0,0,.1);
+            border-radius: 100%;
+            opacity: 0;
+            -webkit-animation: sdb03 3s infinite;
+            animation: sdb03 3s infinite;
+            box-sizing: border-box;
+        }
 @-webkit-keyframes sdb03 {
   0% {
     opacity: 0;
@@ -160,7 +160,7 @@ section {
     opacity: 1;
   }
   60% {
-    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    box-shadow: 0 0 0 60px rgba(0,0,0,.1);
     opacity: 0;
   }
   100% {
@@ -175,7 +175,7 @@ section {
     opacity: 1;
   }
   60% {
-    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    box-shadow: 0 0 0 60px rgba(0,0,0,.1);
     opacity: 0;
   }
   100% {
@@ -190,10 +190,10 @@ section {
 }
 #section04 a span {
   position: absolute;
-  top: 0;
-  left: 50%;
-  width: 24px;
-  height: 24px;
+  top: -50px;
+  left: 400px;
+  width: 130px;
+  height: 26px;
   margin-left: -12px;
   border-left: 1px solid #fff;
   border-bottom: 1px solid #fff;
@@ -233,10 +233,10 @@ section {
 }
 #section05 a span {
   position: absolute;
-  top: 0;
-  left: 50%;
-  width: 24px;
-  height: 24px;
+  top: -50px;
+  left: 400px;
+  width: 80px;
+  height: 46px;
   margin-left: -12px;
   border-left: 1px solid #fff;
   border-bottom: 1px solid #fff;
@@ -336,8 +336,8 @@ section {
   width: 24px;
   height: 24px;
   margin-left: -12px;
-  border-right: 3px solid #1abc9c;
-  border-top: 3px solid #1abc9c;
+  border-right: 3px solid #26788c;
+  border-top: 3px solid #26788c;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   -webkit-animation: sdb07 2s infinite;

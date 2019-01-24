@@ -1,0 +1,6 @@
+﻿body {
+    background: linear-gradient(to left, #66ccff , #0088cc);
+}
+.topLeft{
+    box-shadow: 3px 3px 20px black;
+}

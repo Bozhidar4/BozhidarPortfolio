@@ -4,12 +4,42 @@
     <!-- Meta, title, CSS, favicons, etc. -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Bozhidar Rangelov portfolio">
+    <meta name="author" content="Bozhidar Rangelov">
+    <link rel="shortcut icon" type="image/png" href="images/favicon55.png" />
+    <link rel="shortcut icon" type="image/png" href="images/favicon55.png" />
 
-    <title>Bozhidar Rangelov Portfolio </title>
+    <!-- Google Analytics Tool -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-98314676-2', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-98314676-3', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    <title>Bozhidar Rangelov's Portfolio </title>
 
     <!-- Styles -->
+
     <link rel='stylesheet' href='assets/css/bootstrap.min.css'>
     <link rel='stylesheet' href='assets/css/animate.min.css'>
     <link rel='stylesheet' href="assets/css/font-awesome.min.css" />
@@ -19,7 +49,8 @@
     <link href="assets/css/downButton.css" rel="stylesheet" />
     <link href="assets/css/customStyle.css" rel="stylesheet" />
     <link href="assets/css/upButton.css" rel="stylesheet" />
-
+    <link href="assets/css/modalWindow.css" rel="stylesheet" />
+    <!--<link href="assets/css/xmas.css" rel="stylesheet" />-->
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
 
@@ -33,8 +64,20 @@
 </head>
 <body>
     <!-- Begin Hero Bg -->
+
     <div id="parallax">
+        <div class="moon"></div>
     </div>
+    <canvas id="parallax" class='connecting-dots parallax hidden-sm hidden-xs'></canvas>
+
+
+
+
+    <!--<script type="text/javascript">
+        $('#parallax').backgroundMove({
+            movementStrength: '50'
+        });
+    </script>-->
     <!-- End Hero Bg
         ================================================== -->
     <!-- Start Header
@@ -48,9 +91,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <!-- Logo -->
 
+                <!-- Logo -->
                 <a href="#hero" class="navbar-brand">Bozhidar <span class="lighter">Rangelov</span></a>
+                <img class="me wow bounceInDown hidden-sm hidden-xs" src="images/me5.png" />
             </div>
 
             <!-- Start Navigation -->
@@ -88,19 +132,32 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
+                    
                     <div class="herotext">
-                        <h1 class="wow bounceInDown" data-wow-duration="1s" data-wow-delay="0.1s">Hello! <br /><span class="lighter">My name is <b>BOZHIDAR</b></span></h1>
-                        <p class="lead wow bounceInRight" data-wow-duration="2s" data-wow-delay="0.5s">
-                            <b>C# / ASP.NET MVC developer</b>
+                        <h1 class="wow bounceInDown pencil" data-wow-duration="1s" data-wow-delay="0.1s"> <br /><span class="lighter"> <br /><b> </b></span></h1>
+                        <p class="lead wow bounceInRight pencil" data-wow-duration="2s" data-wow-delay="0.5s">
+                            <b> </b>
+                        </p>
+                        <p id="days">
+                        <!--<a href="#gallery" class="btn btn-default btn-lg wow fadeInLeft mainButton" role="button"> Gallery </a> &nbsp; <a href="tel:+447595158646" class="btn btn-default btn-lg wow fadeInRight mainButton" role="button">Call now&nbsp;<span class="camera"><i class="fa fa-phone"></i></span></a>--> 
                         </p>
                     </div>
                 </div>
-                <div class="col-md-7">
-                </div>
+                <!--<div class="col-md-7">
+                    <img class="img-responsive moon hidden-sm hidden-xs" src="images/moon.png" />
+                </div>-->
+
+                <!--<div class="santa">
+                    <img src="images/santa4.png" class="santa" />
+                </div>-->
+
+                <!--<div id="particles-js"></div>-->
+
             </div>
 
             <!-- Down Button -->
-            <section id="section06" class="demo">
+            <section id="section03" class="demo">
+
                 <a href="#about"><span class="down-arrow"></span></a>
             </section>
             <!-- Down Button End -->
@@ -111,7 +168,7 @@
         ================================================== -->
     <section id="about" class="parallax section">
         <div class="wrapsection">
-            <div class="parallax-overlay" style="background-color: #fff"></div>
+            <div class="parallax-overlay" style="background-color: #15414c"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -121,17 +178,18 @@
                         </div>
                     </div>
                     <div class="col-md-8 col-sm-8 my-image">
-                        <div class="service-box wow bounceInLeft col-sm-6 img-responsive img-back" data-wow-duration="1.5s" data-wow-delay="0.1s">
-                            <img class="myself" src="assets/img/DSC_03111.jpg" />
+                        <div class="service-box wow bounceInLeft col-sm-6 img-responsive img-back" data-wow-duration="1.5s" data-wow-delay="0.5s">
+
+                            <img class="myself" src="images/me5.png" style="margin-bottom: 0" />
                         </div>
                     </div>
-                    <article class="wow bounceInRight col-sm-10 container bio" data-wow-duration="1.5s" data-wow-delay="0.1s">
+                    <article class="wow bounceInRight col-sm-10 container bio" data-wow-duration="1.5s" data-wow-delay="0.8s">
                         Inspired by the idea of ​​working in the IT industry, I turn my hobby into a profession.
                         There is nothing better than to love your job.
-                        I started learning at home in November 2016. I use every free minute to enrich
+                        My first exposure to web development was in December 2011. I use every free minute to enrich
                         my knowledge of software programming, while doing my hobby I take a step forward
-                        to my dream career.<br />
-                        I think my long work experience can help me a lot in my new position as I have experience with clients and colleagues,
+                        to better understanding the software world.<br />
+                        I think my long work experience in various companies with different businesses can help me a lot in my new position as I have experience with clients and colleagues,
                         and I know how business works.
                         I'm a team player who thinks there are no impossible things. My positive thinking and friendly attitude
                         helps me cope with all kinds of problems. My desire to work as a software
@@ -144,7 +202,7 @@
 
     <!-- Random
         ================================================== -->
-    <section class="parallax section" style="background-image: url('https://s-media-cache-ak0.pinimg.com/originals/6d/f0/5e/6df05e06925f2616b7f799613d30f588.jpg');">
+    <section class="parallax section">
         <div class="wrapsection">
             <div class="parallax-overlay"></div>
             <div class="container">
@@ -172,39 +230,69 @@
                     </div>
 
                     <!-- Logos Start -->
-                    <div class="col-md-4 col-sm-6 img-responsive">
-                        <div class="service-box wow bounceInLeft uni img-responsive logos" data-wow-duration="1.5s" data-wow-delay="0.1s">
-                            <img class="education" src="http://devstickers.com/assets/img/pro/2p4i.png" />
+                    <div class="col-md-4 col-sm-6 img-responsive skills">
+                        <div class="service-box wow bounceInLeft uni img-responsive logos" data-wow-duration="1.2s" data-wow-delay="0.5s">
+                            <img class="education" src="http://devstickers.com/assets/img/pro/2p4i.png" style="width: 80px; height: 80px; margin-bottom: 0" />
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 img-responsive">
-                        <div class="service-box wow bounceInDown uni img-responsive logos" data-wow-duration="1.5s" data-wow-delay="0.1s">
-                            <img class="education" src="https://www-asp.azureedge.net/v-2017-07-13-002/images/ui/asplogo-square.png" />
+                    <div class="col-md-4 col-sm-6 img-responsive skills">
+                        <div class="service-box wow bounceInDown uni img-responsive logos" data-wow-duration="1.5s" data-wow-delay="0.5s">
+                            <img class="education" src="https://www-asp.azureedge.net/v-2017-07-13-002/images/ui/asplogo-square.png" style="width: 80px; height: 80px; margin-bottom: 0" />
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 img-responsive">
-                        <div class="service-box wow bounceInRight uni img-responsive logos" data-wow-duration="1.5s" data-wow-delay="0.1s">
-                            <img class="education" src="https://stgsys.net/wp-content/uploads/2012/03/html-5.png" />
+                    <div class="col-md-4 col-sm-6 img-responsive skills">
+                        <div class="service-box wow bounceInRight uni img-responsive logos" data-wow-duration="1.2s" data-wow-delay="0.5s">
+                            <img class="education" src="https://stgsys.net/wp-content/uploads/2012/03/html-5.png" style="width: 80px; height: 80px; margin-bottom: 0" />
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 img-responsive">
-                        <div class="service-box wow bounceInLeft uni img-responsive logos" data-wow-duration="1.5s" data-wow-delay="0.1s">
-                            <img class="education" src="https://stgsys.net/wp-content/uploads/2012/03/css3-logo.png" />
+                    <div class="col-md-4 col-sm-6 img-responsive skills">
+                        <div class="service-box wow bounceInLeft uni img-responsive logos" data-wow-duration="1.6s" data-wow-delay="0.5s">
+                            <img class="education" src="https://stgsys.net/wp-content/uploads/2012/03/css3-logo.png" style="width: 80px; height: 80px; margin-bottom: 0" />
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 img-responsive">
-                        <div class="service-box wow flipInY uni img-responsive logos" data-wow-duration="1.5s" data-wow-delay="0.1s">
-                            <img class="education" src="https://www.javatpoint.com/images/javascript/javascript_logo.png" />
+                    <div class="col-md-4 col-sm-6 img-responsive skills">
+                        <div class="service-box wow flipInY uni img-responsive logos" data-wow-duration="2.2s" data-wow-delay="0.5s">
+                            <img class="education" src="https://www.javatpoint.com/images/javascript/javascript_logo.png" style="width: 85px; height: 80px; margin-bottom: 0" />
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 img-responsive">
-                        <div class="service-box wow bounceInRight uni img-responsive logos" data-wow-duration="1.5s" data-wow-delay="0.1s">
-                            <img class="education" src="http://howtodevelop.net/wp-content/uploads/2017/05/jquery.png" />
+                    <div class="col-md-4 col-sm-6 img-responsive skills">
+                        <div class="service-box wow bounceInRight uni img-responsive logos" data-wow-duration="1.6s" data-wow-delay="0.5s">
+                            <img class="education" src="https://www.mykopcha.com/assets/img/services/Expertise/jquery.png" style="width: 80px; height: 80px; margin-bottom: 0" />
                         </div>
                     </div>
-
+                    <div class="col-md-4 col-sm-6 img-responsive skills">
+                        <div class="service-box wow bounceInLeft uni img-responsive logos" data-wow-duration="2s" data-wow-delay="0.5s">
+                            <img class="education" src="https://s-media-cache-ak0.pinimg.com/originals/30/8a/16/308a16d88daefd38eb305755fc4d9794.png" style="width: 90px; height: 80px; margin-bottom: 0" />
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 img-responsive skills">
+                        <div class="service-box wow flipInY uni img-responsive logos" data-wow-duration="2s" data-wow-delay="0.5s">
+                            <img class="education" src="http://www.freepngimg.com/download/photoshop_logo/12-2-photoshop-logo-free-download-png.png" style="width: 80px; height: 80px; margin-bottom: 0" />
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 img-responsive skills">
+                        <div class="service-box wow bounceInRight uni img-responsive logos" data-wow-duration="2s" data-wow-delay="0.5s">
+                            <img class="education" src="https://upload.wikimedia.org/wikipedia/de/8/8c/Microsoft_SQL_Server_Logo.svg" style="width: 100px; height: 80px; margin-bottom: 0" />
+                        </div>
+                    </div>
                     <!-- Logos End -->
 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Random
+       ================================================== -->
+    <section class="parallax section" style="background-image: url('images/road.jpg'); background-position: 50% 0px;">
+        <div class="wrapsection">
+            <div class="parallax-overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 sol-sm-12">
+                        <div class="maintitle">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -213,26 +301,239 @@
     <!-- Projects
         ================================================== -->
     <section id="projects" class="parallax section">
-        <div class="wrapsection">
-            <div class="parallax-overlay timelinesection" opacity:0.9;"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 sol-sm-12">
-                        <div class="maintitle">
-                            <h3 class="section-title">My Projects</h3>
-                        </div>
-                    </div>
+        <div class="parallax-overlay timelinesection" opacity:0.9;"></div>
+        <div class="container">
+            <div class="row">
+                <section id="gallery" class="parallax section">
+                    <div class="wrapsection">
+                        <div class="parallax-overlay"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 sol-sm-12">
+                                    <div class="col-md-12 sol-sm-12">
+                                        <div class="maintitle">
+                                            <h3 class="section-title">My Projects</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3">
+                                        <a title="Most Famous Fitness Models" class="project2">
+                                            <img src="images/Sergi.jpg" alt="Most Famous Fitness Models" class="image-responsive">
+                                            <div class="description">
+                                                <span id="myBtn" class="caption">Fitness <b>Models</b> Description</span>
+                                                <!-- The Modal -->
+                                                <div id="myModal" class="modal">
 
-                    <!-- Projects Start -->
-                    <div class="col-md-4 col-sm-6 img-responsive">
-                        <div class="service-box wow flipInY uni img-responsive logos" data-wow-duration="1.5s" data-wow-delay="0.1s" style="background-color: #808080">
-                            <a href="cube.html" class="btn btn-default btn-lg wow fadeInLeft" role="button"> 3D Cube </a>
+                                                    <!-- Modal content -->
+                                                    <div class="modal-content">
+                                                        <span class="close">&times;</span>
+                                                        <p class="title">Most Famous Fitness Models</p>
+                                                        <img src="images/project1.png" class="project1 projectimg img-back myself img-responsive" style="width: 500px" />
+                                                        <br />
+                                                        <article style="text-transform: none">
+                                                            This website is about some of the most famous fitness models around the world. They have changed the bodybuilding industry as we know it. They are not as big as Mr. Olympia's contenders and millions of people want to look like them. <br />Users can view the database content. They can edit or delete existing data. Also they can create new entries and save them.<br />This is ASP.NET MVC database first project. For building it I have used: <br /><b>- C#, ASP.NET MVC, MS SQL Server, Html, Css, Razor, Entity Framework, Javascript, Jquery, Bootstrap, Azure.</b>
+                                                        </article>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </a>
+                                        <a class="btn btn-primary" href="http://famousfitnessmodels.azurewebsites.net/" target="_blank">Visit Online</a>
+                                        <a class="btn btn-primary" href="https://github.com/Bozhidar4/FamousFitnessModels" target="_blank">github</a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3">
+                                        <a title="Crab Shooter" class="project2" style="background-color: black">
+                                            <iframe class="col-lg-12 col-md-12 col-sm-12" width="400" height="255" src="https://www.youtube.com/embed/kQaofKzfl6o" frameborder="0" allowfullscreen></iframe>
+                                            <div class="description">
+                                                <span id="myBtn5" class="caption">Crab <b>Shooter</b> Description</span>
+                                                <!-- The Modal 5 -->
+                                                <div id="myModal5" class="modal5">
+
+                                                    <!-- Modal content 5 -->
+                                                    <div class="modal-content5">
+                                                        <span class="close5">&times;</span>
+                                                        <p class="title">Crab Shooter</p>
+                                                        <img src="images/CrabScreen.png" class="project1 projectimg img-back myself img-responsive" style="width: 500px" />
+                                                        <br />
+                                                        <article style="text-transform: none">
+                                                            This is Winforms application. It is a simple shooting game where users can shoot the red crab which is moving around the beach. The game is tracking the number of shoots, hits and misses. When the crab is hit it turns into an angel crab.<br />For building this application I have used: <br /><b>- C#, Winforms</b>
+                                                        </article>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </a>
+                                        <a class="btn btn-primary" href="Crab Shooter.rar">Download</a>
+                                        <a class="btn btn-primary" href="https://github.com/Bozhidar4/CrabShooter" target="_blank">github</a>
+                                    </div>
+                                    <!--<iframe class="col-lg-3 col-md-3 col-sm-3" width="350" height="250" src="https://www.youtube.com/embed/kQaofKzfl6o" frameborder="0" allowfullscreen></iframe>
+    <p class="title" style="text-align: center">Crab Shooter Video</p>-->
+                                    <div class="col-lg-3 col-md-3 col-sm-3">
+                                        <a title="Marvel Characters" class="project2" style="background-color: black">
+                                            <iframe class="col-lg-12 col-md-12 col-sm-12" width="400" height="255" src="https://www.youtube.com/embed/7kpX61ej8qI" frameborder="0" allowfullscreen></iframe>
+                                            <div class="description">
+                                                <span id="myBtn6" class="caption">Marvel <b>Characters</b> Description</span>
+                                                <!-- The Modal 6 -->
+                                                <div id="myModal6" class="modal6">
+
+                                                    <!-- Modal content 6 -->
+                                                    <div class="modal-content6">
+                                                        <span class="close6">&times;</span>
+                                                        <p class="title">Marvel Characters</p>
+                                                        <img src="images/MarvelCharacters.png" class="project1 projectimg img-back myself img-responsive" style="width: 500px" />
+                                                        <br />
+                                                        <article style="text-transform: none">
+                                                            This is Windows Presentation Foundation application. The goal is to guess the name of the Marvel character which is on the picture. By pressing a button a new image is revealed. The game is tracking the correct answers and the user gets 10 points on every correct answer. If all the answers are correct a sign comes out to congratulate the user<br />For building this application I have used: <br /><b>- C#, WPF, Xaml</b>
+                                                        </article>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </a>
+                                        <a class="btn btn-primary" href="Marvel-Characters.rar">Download</a>
+                                        <a class="btn btn-primary" href="https://github.com/Bozhidar4/" target="_blank">github</a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3">
+                                        <a title="Healthy Foods" class="project2">
+                                            <img src="images/nuts.jpg" alt="" class="image-responsive">
+                                            <div class="description">
+                                                <span id="myBtn2" class="caption">Healthy <b>Foods</b> Description</span>
+                                                <!-- The Modal 2 -->
+                                                <div id="myModal2" class="modal2">
+
+                                                    <!-- Modal content 2 -->
+                                                    <div class="modal-content2">
+                                                        <span class="close2">&times;</span>
+                                                        <p class="title">Healthy Foods</p>
+                                                        <img src="images/healthyfoodsscreen.png" class="project1 projectimg img-back myself img-responsive" style="width: 500px" />
+                                                        <br />
+                                                        <article style="text-transform: none">
+                                                            This website is about some of the healthy foods and their nutrition values. Users can see how much calories they take with certain meal.<br />Users can view the database content. They can edit or delete existing data. Also they can create new entries and save them.<br />This is ASP.NET MVC code first project. For building it I have used: <br /><b>- C#, ASP.NET MVC, MS SQL Server, Html, Css, Razor, Entity Framework, Javascript, Jquery, Bootstrap, Azure.</b>
+                                                        </article>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </a>
+                                        <a class="btn btn-primary" href="http://healthyfoods.azurewebsites.net/" target="_blank">Visit Online</a>
+                                        <a class="btn btn-primary" href="https://github.com/Bozhidar4/HealthyFoods" target="_blank">github</a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3">
+                                        <a title="Healthy Foods" class="project2">
+                                            <img src="https://image.made-in-china.com/202f0j00oQYRUesrgSqK/Gamer-Desktop-Computer-I7-with-24inch-Monitor-Desktop-PC.jpg" alt="" class="image-responsive">
+                                            <div class="description">
+                                                <span id="myBtn4" class="caption">Computer <b>Parts</b> Description</span>
+                                                <!-- The Modal 4 -->
+                                                <div id="myModal4" class="modal4">
+
+                                                    <!-- Modal content 4 -->
+                                                    <div class="modal-content4">
+                                                        <span class="close4">&times;</span>
+                                                        <p class="title">Computer Parts</p>
+                                                        <img src="images/Computer Parts.png" class="project1 projectimg img-back myself img-responsive" style="width: 500px" />
+                                                        <br />
+                                                        <article style="text-transform: none">
+                                                            In this website users can find information about computer components. They can find various parts such as: Motherboards, CPUs, HDDs, SSDs, Ram memory, Graphics Cards, Cases etc.<br />Users can view the database content. They can edit or delete existing data. Also they can create new entries and save them.<br />This is ASP.NET MVC database first project. For building it I have used: <br /><b>- C#, ASP.NET MVC, MS SQL Server, Html, Css, Razor, Entity Framework, Javascript, Jquery, Bootstrap, Azure.</b>
+                                                        </article>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </a>
+                                        <a class="btn btn-primary" href="http://computerparts.azurewebsites.net/" target="_blank">Visit Online</a>
+                                        <a class="btn btn-primary" href="https://github.com/Bozhidar4/ComputerParts" target="_blank">github</a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3">
+                                        <a title="Talking Program" class="project2">
+                                            <img src="images/talkingprogram.png">
+                                            <div class="description">
+                                                <span id="myBtn3" class="caption">Talking <b>Program</b> Description</span>
+                                                <!-- The Modal 3 -->
+                                                <div id="myModal3" class="modal3">
+
+                                                    <!-- Modal content 3 -->
+                                                    <div class="modal-content3">
+                                                        <span class="close3">&times;</span>
+                                                        <p class="title">Healthy Foods</p>
+                                                        <img src="images/talkingprogramscreen.png" class="project1 projectimg img-back myself img-responsive" style="width: 500px" />
+                                                        <br />
+                                                        <article style="text-transform: none">
+                                                            This is Windows Presentation Foundation application. Users can enter their data and the application will responding by voice.<br />For building it I have used: <br /><b>- C#, WPF, Xaml</b>
+                                                        </article>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </a>
+                                        <a class="btn btn-primary" href="Talking program.rar">Download</a>
+                                        <a class="btn btn-primary" href="https://github.com/Bozhidar4" target="_blank">github</a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3">
+                                        <a title="Marvel Heroes" class="project2" style="background-color: black">
+                                            <img src="https://i.annihil.us/u/prod/marvel/i/mg/3/a0/537ba3793915b/standard_xlarge.jpg" alt="" class="image-responsive">
+                                            <!--<iframe class="col-lg-12 col-md-12 col-sm-12" width="400" height="255" src="https://www.youtube.com/embed/voTsspAfe5w" frameborder="0" allowfullscreen></iframe>-->
+                                            <div class="description">
+                                                <span id="myBtn7" class="caption">Marvel <b>Heroes</b> Description</span>
+                                                <!-- The Modal 7 -->
+                                                <div id="myModal7" class="modal7">
+
+                                                    <!-- Modal content 7 -->
+                                                    <div class="modal-content7">
+                                                        <span class="close7">&times;</span>
+                                                        <p class="title">Marvel Heroes</p>
+                                                        <img src="images/MarvelHeroes.png" class="project1 projectimg img-back myself img-responsive" style="width: 500px" />
+                                                        <br />
+                                                        <article style="text-transform: none">
+                                                            In this website users can find information about some of the most famous Marvel Super Heroes. They can find details about certain character or group of characters.<br />All the information is stored in multi table database. The information about single character is accessible through SQL View.<br />This is ASP.NET MVC database first project. For building it I have used: <br /><b>- C#, ASP.NET MVC, MS SQL Server, Html, Css, Razor, Entity Framework, Javascript, Bootstrap, Azure.</b>
+                                                        </article>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </a>
+                                        <a class="btn btn-primary" href="#" target="_blank">in progress</a>
+                                        <a class="btn btn-primary" href="https://www.youtube.com/embed/voTsspAfe5w" target="_blank">video</a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 img-responsive">
-                        <div class="service-box wow flipInY uni img-responsive logos" data-wow-duration="1.5s" data-wow-delay="0.1s" style="background-color: black">
-                            <a href="https://github.com/Bozhidar4" class="btn btn-default btn-lg wow fadeInRight" role="button">GitHub.com</a>
-                        </div>
+                </section>
+
+                <!-- Small Projects Start -->
+                <br />
+                <div id="small-projects" class="col-md-12 sol-sm-12">
+                    <h3 class="section-title">Small Projects</h3>
+                    <h3 class="section-title">(html, css, javascript)</h3>
+                </div>
+                <div class="col-md-4 col-sm-6 img-responsive">
+                    <div class="service-box wow flipInY uni img-responsive logos" data-wow-duration="1.5s" data-wow-delay="0.5s" style="background-color: #808080">
+                        <a href="cube.html" class="btn btn-default btn-lg wow fadeInLeft" role="button" target="_blank"> 3D Cube </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 img-responsive">
+                    <div class="service-box wow flipInY uni img-responsive logos" data-wow-duration="1.7s" data-wow-delay="0.5s" style="background-color: black">
+                        <a href="highAdventures.html" class="btn btn-default btn-lg wow fadeInRight" role="button" target="_blank">High Adventures</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 img-responsive">
+                    <div class="service-box wow flipInY uni img-responsive logos" data-wow-duration="2s" data-wow-delay="0.5s" style="background-color: #808080">
+                        <a href="taxCalculator.html" class="btn btn-default btn-lg wow fadeInLeft" role="button" target="_blank"> Tax Calculator </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 img-responsive">
+                    <div class="service-box wow flipInY uni img-responsive logos" data-wow-duration="2.2s" data-wow-delay="0.5s" style="background-color: black">
+                        <a href="bmiCalculator.html" class="btn btn-default btn-lg wow fadeInRight" role="button" target="_blank"> BMI Calculator </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 img-responsive">
+                    <div class="service-box wow flipInY uni img-responsive logos" data-wow-duration="2.5s" data-wow-delay="0.5s" style="background-color: #808080">
+                        <a href="dice.html" class="btn btn-default btn-lg wow fadeInLeft" role="button" target="_blank"> Roll The Dice </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 img-responsive">
+                    <div class="service-box wow flipInY uni img-responsive logos" data-wow-duration="2.8s" data-wow-delay="0.5s" style="background-color: black">
+                        <a href="#" class="btn btn-default btn-lg wow fadeInRight" role="button"> Coming soon </a>
                     </div>
                 </div>
             </div>
@@ -240,9 +541,9 @@
     </section>
 
 
-    <!-- Projects
+    <!-- Random
         ================================================== -->
-    <section id="slider" class="parallax section" style="background-image: url(''); background-image: url('https://s-media-cache-ak0.pinimg.com/originals/6d/f0/5e/6df05e06925f2616b7f799613d30f588.jpg'); ">
+    <section id="slider" class="parallax section" style="background-image: url('images/road.jpg'); background-position: 50% 0px;">
         <div class="wrapsection">
             <div class="container">
                 <div class="col-md-12 sol-sm-12">
@@ -265,7 +566,7 @@
                 <div class="row">
                     <div class="col-md-12 sol-sm-12">
                         <div class="maintitle">
-                            <h3 class="section-title"><span class="wow bounceInRight">Education</span></h3>
+                            <h3 class="section-title"><span class="wow bounceInRight about-me">Education</span></h3>
                         </div>
                     </div>
 
@@ -273,7 +574,31 @@
 
 
                     <div class="col-md-4 col-sm-6 img-responsive">
-                        <div class="service-box wow flipInY uni img-responsive" data-wow-duration="1.5s" data-wow-delay="0.1s" style="background-color:white; padding-left: 30px; width: 300px">
+                        <div class="service-box wow bounceInLeft uni img-responsive school" data-wow-duration="1.5s" data-wow-delay="0.5s">
+                            <img class="education" style="width: 80px; height: 80px" src="https://pbs.twimg.com/profile_images/600936551061807104/_po7UVKm.png" />
+                            <h3>June 2017 - December 2017<br /><br /></h3>
+                            <p>
+                                Developers Professional Course<br /><br />
+                                Improving my C#, ASP.NET MVC, SQL, HTML, CSS, Javascript, Bootstrap skills
+                                <br /><br />
+                                Just IT Training and Recruitment Ltd
+                                <br /><br />
+                                London / UK
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 img-responsive">
+                        <div class="service-box wow flipInY uni img-responsive school" data-wow-duration="1.5s" data-wow-delay="0.5s">
+                            <img class="education" src="images/kia-logo.jpg" />
+                            <h3>September 2008 - May 2011<br /><br /></h3>
+                            <p>
+                                Marketing (Advertising & PR)<br /><br />College of economics and administration<br /><br />
+                                Plovdiv / Bulgaria
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 img-responsive">
+                        <div class="service-box wow bounceInRight uni img-responsive school" data-wow-duration="1.5s" data-wow-delay="0.5s">
                             <img class="education" src="https://physics.uni-plovdiv.bg/wp-content/uploads/2017/05/SS-PU.jpg" />
                             <h3>October 2001 - June 2007<br /><br /></h3>
                             <p>
@@ -284,79 +609,72 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 img-responsive">
-                        <div class="service-box wow flipInY uni img-responsive" data-wow-duration="1.5s" data-wow-delay="0.1s" style="background-color:white; padding: 30px; width: 300px">
-                            <img class="education" src="http://webrix-studio.com/thumbs/files/data_0/569/Image/cli_logo_9ed7b_logo_kia.gif&w=215" />
-                            <h3>September 2008 - May 2011<br /><br /></h3>
-                            <p>
-                                Marketing (Advertising & PR)<br /><br />College of economics and administration<br /><br />
-                                Plovdiv / Bulgaria
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 img-responsive">
-                        <div class="service-box wow flipInY uni img-responsive" data-wow-duration="1.5s" data-wow-delay="0.1s" style="background-color:white; padding: 30px; width: 300px">
-                            <img class="education" src="data:image/png;base64,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" />
-                            <h3>June 2017<br /><br /></h3>
-                            <p>
-                                Developers Professional Course<br /><br />
-                                Just IT Training and Recruitment Ltd
-                                <br /><br />
-                                London / UK
-                            </p>
-                        </div>
-                    </div>
                     <!-- Univercity End -->
 
                 </div>
 
 
-                <!-- TimeLine
+                <!-- TimeLine / Work Experience
                     ================================================== -->
 
                 <section id="experience" class="timeline wow bounceInRight">
-                    <br /><br />
-                    <h3 class="section-title"><span>Work Expirience</span></h3>
-                    <br /><br /><br />
-                    <ol>
-                        <li>
-                            <div>
-                                <time>Private Hire Driver - Uber<br />February 2016 - present<br /> London, UK</time> As Uber Driver I meet different people from all over the world. This helps me to improve my communication skills. I'm getting better in multitasking because I am driving, talking and follow the route at the same time.
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <time>Driver - Rapid staff solutions ltd<br />July 2015 - February 2016<br />Gatwick Airport, UK</time> As a driver, I had the responsibility to drive my customers' cars, and I had to be careful because I was fully responsible for every car I was driving. I worked in a team together with my colleagues, which helped me a lot to build communication and interpersonal relationships.
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <time>Restaurant Manager - Aladin Foods<br />October 2013 - June 2015<br />Plovdiv, Bulgaria</time> As a restaurant manager, I was responsible for staff, equipment, cleanliness, and customer service. I prepared various types of reports and employee schedule. This position has taught me to take responsibility for my actions and to work with deadlines.
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <time>Car Valeter - Assured Group ltd<br />July 2012 - October 2013<br />Bedford, UK</time> In this position, I learned to meet deadlines and work under pressure. I was responsible for distributing the tasks of the other car valeters. Fast work and delivery of quality service were of great importance.
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <time>Web Design - Liquid Studio Ltd (Internship)<br />May 2012 - June 2012<br />Plovdiv, Bulgaria</time> I studied html, css, photoshop and helped develop a variety of websites.
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <time>Floor Manager - Sunfoods Bulgaria<br />October 2006 - May 2012<br />Plovdiv, Bulgaria</time> As a floor manager, I was responsible for staff, equipment, cleanliness, and customer service. I prepared various types of reports and employee schedule. This position has taught me to take responsibility for my actions and meet deadlines.
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <time>Crew Member - Sunfoods Bulgaria<br />May 2005 - September 2006<br />Plovdiv, Bulgaria</time> I did a variety of tasks, such as customer service, food cooking, cleaning. I had to follow high working standards.
-                            </div>
-                        </li>
-                        <li></li>
-                    </ol>
-                    <br /><br />
+                    <br /><br /><br /><br /><br /><br />
+                    <div class="col-md-12 sol-sm-12">
+                        <div class="maintitle">
+                            <h3 class="section-title about-me"><span>Expirience</span></h3>
+                        </div>
+                    </div>
+                    <br /><br /><br /><br />
+                                      <ol>
+                                          <li>
+                                              <div>
+                                                  <time>Support Desk Software Engineer - Synetec<br />February 2018 - present<br /> London, UK</time> As a support desk sofware engineer I take care of support calls from clients and deal with their requests. Also I am involved in softawe development using C#, ASP.NET Web forms, ASP.NET Core 1 and 2, html, css, javascript, entity framework, SQL Server.
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div>
+                                                  <time>Web Developer - Beckster Ltd<br /> Work Placement<br />December 2017 - January 2018<br /> London, UK</time> As a web developer I created and I was developing <a href="http://www.wing-girls.com" target="_blank">http://www.wing-girls.com</a> I was a member of a team of two - one senior developer and myself. We were using GitHub for version control, Sass, html, css, javascript, photoshop.
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div>
+                                                  <time>Private Hire Driver - Uber<br />February 2016 - January 2018<br /> London, UK</time> As Uber Driver I meet different people from all over the world. This helps me to improve my communication skills. I'm getting better in multitasking because I am driving, talking and follow the route at the same time.
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div>
+                                                  <time>Driver - Rapid staff solutions ltd<br />July 2015 - February 2016<br />Gatwick Airport, UK</time> As a driver, I had the responsibility to drive my customers' cars, and I had to be careful because I was fully responsible for every car I was driving. I worked in a team together with my colleagues, which helped me a lot to build communication and interpersonal relationships.
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div>
+                                                  <time>Restaurant Manager - Aladin Foods<br />October 2013 - June 2015<br />Plovdiv, Bulgaria</time> As a restaurant manager, I was responsible for staff, equipment, cleanliness, and customer service. I prepared various types of reports and employee schedule. This position has taught me to take responsibility for my actions and to work with deadlines.
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div>
+                                                  <!--<time>Junior Software Developer - ?????????<br />July 2012 - October 2013<br />Plovdiv, Bulgaria</time> As a junior software developer I was helping the senior designer for developing various web and desktop applications. I managed to fit in the team very quickly. For our projects I was using C#, ASP.NET MVC, HTML, CSS, Javascript. I was given variety of tasks such as improving websites design, create particular parts of new websites.-->
+                                                  <time>Car Valeter - Assured Group ltd<br />July 2012 - October 2013<br />Bedford, UK</time> In this position, I learned to meet deadlines and work under pressure. I was responsible for distributing the tasks of the other car valeters. Fast work and delivery of quality service were of great importance.
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div>
+                                                  <time> Junior Web Developer - Liquid Studio<br />December 2011 - June 2012<br />Plovdiv, Bulgaria</time>As a junior web developer I was helping the senior designer for developing various websites. Although I was new member of the team I was always trying to solve any problems myself. For our projects I was using HTML, CSS, Javascript, Photoshop, jQuery, C#, ASP.NET MVC. I was given variety of tasks such as improving websites design, create particular parts of new websites.
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div>
+                                                  <time>Floor Manager - Sunfoods Bulgaria<br />October 2006 - May 2012<br />Plovdiv, Bulgaria</time> As a floor manager, I was responsible for staff, equipment, cleanliness, and customer service. I prepared various types of reports and employee schedule. This position has taught me to take responsibility for my actions and meet deadlines.
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div>
+                                                  <time>Crew Member - Sunfoods Bulgaria<br />May 2005 - September 2006<br />Plovdiv, Bulgaria</time> I did a variety of tasks, such as customer service, food cooking, cleaning. I had to follow high working standards.
+                                              </div>
+                                          </li>
+                                          <li></li>
+                                      </ol>
+                    <br /><br /><br /><br />
                     <div class="arrows">
                         <button class="arrow arrow__prev disabled" disabled>
                             <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_prev.svg" alt="prev timeline arrow">
@@ -377,12 +695,13 @@
 
     <!-- Random
         ================================================== -->
-    <section class="whitecolor parallax section" style="background-image: url('https://s-media-cache-ak0.pinimg.com/originals/6d/f0/5e/6df05e06925f2616b7f799613d30f588.jpg');">
+    <section class="whitecolor parallax section" style="background-image: url('images/road.jpg'); background-position: 50% 0px">
         <div class="wrapsection">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 sol-sm-12">
                         <div class="maintitle">
+                            <h3 class="section-title justtitle">BOZHIDAR <span class="wow flipInX"></span> RANGELOV</h3>
                         </div>
                     </div>
                 </div>
@@ -393,14 +712,14 @@
         ================================================== -->
     <section id="contactarea" class="parallax section">
         <div class="wrapsection">
-            <div class="parallax-overlay" style="background-color: #1cbb9b;opacity:0.95;"></div>
+            <div class="parallax-overlay" style="background-color: #15414c"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="maintitle">
-                            <h3 class="section-title">Get in Touch</h3>
+                            <h3 class="section-title rolling">Get in Touch</h3>
                             <p class="lead">
-                                bojidar.rangelov@gmail.com  |  +44 7479804574  |  Isle of Dogs, London, UK
+                                <a href="mailto:bojidar.rangelov@gmail.com" style="color: white">bojidar.rangelov@gmail.com</a>  |  <a href="tel:+447479804574" style="color: white">+44 7479804574</a>  |  Isle of Dogs, London, E14, UK
                             </p>
                         </div>
                     </div>
@@ -414,9 +733,10 @@
 
 
         <span class="social wow zoomIn">
-            <a href="https://github.com/Bozhidar4"><i class="fa fa-github"></i></a>
+            <br />
+            <a href="https://github.com/Bozhidar4" target="_blank"><i class="fa fa-github"></i></a>
 
-            <a href="https://www.linkedin.com/in/bozhidar-rangelov-44307155/"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/bozhidar-rangelov-44307155/" target="_blank"><i class="fa fa-linkedin"></i></a>
 
         </span><br />
         Copyright &copy; <a href="#">Bozhidar Rangelov</a>
@@ -443,6 +763,10 @@
     <script src="assets/js/skillBar.js"></script>
     <script src="assets/js/timeLine.js"></script>
     <script src="assets/js/downButton.js"></script>
-
+    <script src="assets/js/modalWindow.js"></script>
+    <script src="assets/js/movingBackground.js"></script>
+    <!--<script src="assets/js/background.js"></script>-->
+    <script src="assets/js/logo.js"></script>
+    <!--<script src="assets/js/xmas.js"></script>-->
 </body>
 </html>

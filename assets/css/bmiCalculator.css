@@ -1,0 +1,41 @@
+﻿body {
+    background-color: #4d4d4d;
+}
+
+header{
+    background-color: black;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+h1 {
+    text-align: center;
+    color: crimson;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 2px black;
+    font-size: 40px;
+    margin-top: 0;
+}
+
+label {
+    font-family: Arial;
+    color: white;
+}
+
+/* User input section */
+.submitButton {
+    margin-top: 10px;
+    width: 100px;
+    height: 25px;
+}
+
+/* Results section */
+.resultBmi {
+    margin-top: 10px;
+}
+
+.resultInfo {
+    margin-top: 5px;
+}

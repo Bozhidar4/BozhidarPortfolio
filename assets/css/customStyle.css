@@ -1,4 +1,11 @@
 ﻿body {
+    /*background-image: url('http://coolwallpaperz.info/user-content/uploads/wall/o/14/architecture-millions-of-years-b-c-hd-theme-bin-free-2365387.jpg');*/
+    /*background-image: url('../../images/planet.jpg');
+    background-repeat: no-repeat;*/
+    /*width: 100%;*/
+    /*filter: brightness(50%);*/
+    background-color: black;
+    /*background-attachment: fixed;*/
 }
 
 header {
@@ -6,9 +13,16 @@ header {
 }
 
 #parallax {
-    background-image: url('../img/20170714_112217.jpg');
-    filter: brightness(60%);
-    -webkit-filter: brightness(60%);
+    /*background-image: url('../../images/darkenkeybord60.jpg');*/
+    /*background-image: url('http://i1.wp.com/wallpoop.com/wp-content/uploads/2013/03/wallpaper-elegant-background-grey-illumination-wallpaper-wallpapers.jpg');*/
+    /*filter: brightness(60%);
+    -webkit-filter: brightness(60%);*/
+    background-image: url('../../images/background3.jpg');
+    /*transform: rotate(180deg);*/
+    background-color: black;
+    /*z-index: 0;*/
+    /*background-attachment: fixed;*/
+    /*overflow: hidden;*/
 }
 
 .maintitle {
@@ -17,7 +31,7 @@ header {
 
 .bio {
     width: 100%;
-    color: black;
+    color: #fff;
     text-align: justify;
 }
 
@@ -26,7 +40,7 @@ header {
 }
 
 h1 > span > b {
-    color: #1abc9c;
+    color: #4bb3ce;
 }
 
 .justtitle {
@@ -47,22 +61,23 @@ h1 > span > b {
 }
 
 .image-responsive {
-    border: 2px solid black;
+    /*border: 2px solid black;*/
     box-shadow: 5px 5px 5px 5px black;
 }
 
 .timelinesection {
-    background-color: #1abc9c;
+    background-color: #15414C;
 }
 
 .uni {
-    width: 100px;
-    margin-left: 20px;
+    /*width: 100px;
+    /*margin-left: 20px;*/
 }
 
 .education {
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 0;
 }
 
 .uni > h3 {
@@ -70,14 +85,22 @@ h1 > span > b {
 }
 
 .about-me {
-    color: #1abc9c;
+    color: #fff;
 }
 
 .myself {
-    border-radius: 1%;
-    position: center;
-    border: 3px solid #1abc9c;
+   width: 320px; 
+   /*transition: .4s;   
+   filter: blur(2px);
+   -webkit-filter: blur(1px); 
+   -moz-filter: blur(1px);*/
 }
+/*.myself:hover{
+     filter: blur(0);
+     -webkit-filter: blur(0);
+     -moz-filter: blur(0);
+     transform: rotate(360deg);
+}*/
 
 article {
     text-align: justify;
@@ -89,9 +112,9 @@ article {
 
 .img-back {
     margin: auto;
-    width: 50%;
-    float: none;
     margin-bottom: 0;
+    float: none;
+    background-color: #15414c;
 }
 
 .uni-back {
@@ -103,8 +126,268 @@ article {
 }
 
 .logos {
-    background-color: white;
+    background-color: white;  
+    box-shadow: 3px 3px 20px black; 
+}
+
+.school{
+    background-color:white; 
     padding-left: 30px;
+}
+.img-custom{
+    -webkit-box-sizing: unset;
+    -moz-box-sizing: unset;
+    box-sizing: unset;
+
+}
+.bigProjects{
+    background-color: white;
+    width: 100%;
+    height: auto;
+}
+.projectimg{
+    width: 445px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.project2:hover{
+    box-shadow: 2px 2px 30px #fff;
+}
+
+
+/*Moving image on top of page*/
+.rolling { 
+    position: relative;
+    -webkit-animation: myfirst 5s infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    animation: myfirst 5s infinite;
+    animation-direction: normal;
+    transition: .1s;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirst {
+    0%   {top: 0px;}
+    25%  {top: -30px; }
+    50%  {top: 30px;}
+    75%  {top: 0px;}
+    100% {top: 0px;}
+}
+
+@keyframes myfirst {
+    0%   {left: 0px;}
+    25%  {left: -30px; }
+    50%  {left: 30px;}
+    75%  {left: 0px;}
+    100% {left: 0px;}
+}
+/* END Moving image on top of page*/
+
+
+.navbar-inverse .navbar-nav > li{
+    transition: 0.4s;
+}
+
+.navbar-inverse .navbar-nav > li:hover{
+    /*background-color: #413f3e;*/
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+
+.me{
+    width: 50px; 
+    margin-top: 15px; 
+    display: none;
+    transition: 0.2s;
+}
+.me:hover{
+    transform: scale(1.4);
+}
+
+/* Start Background dots */
+/* {
+  box-sizing: border-box; 
+}*/
+
+html, body {
+  /*line-height: 150%;*/ 
+  /*background-color: black;*/
+  /*background-image: url('http://parsherald.com/wp-content/uploads/2016/09/space.jpg');*/
+  /*background-size: 100%;
+  background-position-y: -200px;*/
+  /*background-repeat: no-repeat;
+  width: 100%;*/
+}
+
+body > canvas {
+  position: absolute;
+  width: 100%;
+  /*height: 100%;*/
+  /*top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;*/ 
+}
+/* End Background dots */
+
+.maintitle .lead{
+    max-width: 100%;
+}
+
+#faq {
+	background-color:#15414c;
+}
+
+#credits{
+    background-color: #fff;
+    margin-top: 0;
+}
+
+
+/*Moon Start*/
+.moon { 
+    /*position: relative;
+    -webkit-animation: myfirst2 5s infinite; 
+    -webkit-animation-direction: alternate; 
+    animation: myfirst2 5s infinite;
+    animation-direction: normal;
+    transition: .9s;
+    transform: rotate(360deg);*/
+    margin-left: 450px;
+    margin-top: 80px;
+    filter: brightness(70%);
+    width: 150px;
+
+      /* 
+     * Make the initial position to be the center of the circle you want this
+     * object follow.
+     */
+    position: absolute;
+    /*left: 315px;
+    top: 143px;*/
+
+    /*
+     * Sets up the animation duration, timing-function (or easing)
+     * and iteration-count. Ensure you use the appropriate vendor-specific 
+     * prefixes as well as the official syntax for now. Remember, tools like 
+     * CSS Please are your friends!
+     */
+    -webkit-animation: myOrbit 20s linear infinite; /* Chrome, Safari 5 */
+       -moz-animation: myOrbit 20s linear infinite; /* Firefox 5-15 */
+         -o-animation: myOrbit 20s linear infinite; /* Opera 12+ */
+            animation: myOrbit 20s linear infinite; /* Chrome, Firefox 16+, 
+                                                      IE 10+, Safari 5 */
+}
+
+@-webkit-keyframes myOrbit {
+    from { -webkit-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@-moz-keyframes myOrbit {
+    from { -moz-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@-o-keyframes myOrbit {
+    from { -o-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@keyframes myOrbit {
+    from { transform: rotate(0deg) translateX(120px); }
+    to   { transform: rotate(360deg) translateX(120px);}
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirst2 {
+    0%   {top: 0px;}
+    25%  {top: -50px; }
+    50%  {top: 15px;}
+    75%  {top: 0px;}
+    100% {top: 0px;}
+}
+
+@keyframes myfirst2 {
+    0%   {top: 0px; right: 0px;}
+    25%  {top: 0px; right: 300px; }
+    50%  {top: 0px; right: 600px;}
+    75%  {top: 400px; right: 600px;}
+    100% {top: 0px; right: 0px;}
+}
+
+/*Moon End*/
+
+/*Navbar Start*/
+.navbar-inverse {
+    /*background-image: url('https://petcremationurns.com.au/wp-content/uploads/2015/08/navbar-background.jpg');*/
+    background-color: #1a1a1a;
+    border: none;
+    color: #fff;
+}
+.navbar-inverse .navbar-brand{
+    color: #fff;
+}
+.navbar-inverse .navbar-brand:hover{
+    color: #4bb3ce;
+}
+.navbar-inverse .navbar-nav > li > a{
+    text-transform: none;
+    font-size: 15px;
+}
+
+/*#hero{
+    padding-bottom: 350px;
+}*/
+
+/*Santa Claus Start*/
+.santa {
     width: 300px;
-    box-shadow: 3px 3px 20px black;
+    position: relative;
+    -webkit-animation-name: santa-fly; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: santa-fly;
+    animation-duration: 15s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    margin-top: -20px;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes santa-fly {
+    0%   {left:-1000px; top:0px;}
+    /*25%  {left:0px; top:0px;}
+    50%  {left:200px; top:0px;}
+    75%  {left:400px; top:0px;}*/
+    100% {left:750px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes santa-fly {
+    0%   {left:-1000px; top:0px;}
+    /*25%  {left:0px; top:0px;}
+    50%  {left:200px; top:0px;}
+    75%  {left:400px; top:0px;}*/
+    100% {left:750px; top:0px;}
+}
+/*Santa Claus End*/
+
+
+#days {
+  font-size: 45px;
+  color: #e60000;
+  letter-spacing: 3px;
+  font-family: 'Brush Script Std';
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+.pencil{
+    font-family: 'Booklet Cordel';
+}
+@font-face {
+    font-family: 'Booklet Cordel';
+    src: url('../fonts/Booklet Cordel.ttf') format('truetype');
 }

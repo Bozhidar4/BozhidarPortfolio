@@ -108,7 +108,7 @@
   -ms-transform     : translateZ(100px);
   transform         : translateZ(100px);
   
-  background-image  : url(https://scontent.xx.fbcdn.net/v/t1.0-9/13521871_1295393880475649_929008270138015009_n.jpg?oh=2385c27c495478d85a86fcfd6d98a844&oe=59E06F29);
+  background-image  : url('../../images/bozhidar.jpg');
   background-size   : 100%;
   background-repeat : no-repeat;
 }
@@ -120,7 +120,7 @@
   -ms-transform     : rotateY(90deg) translateZ(100px);
   transform         : rotateY(90deg) translateZ(100px);
   
-  background-image  : url(https://scontent.xx.fbcdn.net/v/t1.0-9/13521871_1295393880475649_929008270138015009_n.jpg?oh=2385c27c495478d85a86fcfd6d98a844&oe=59E06F29);
+  background-image  : url('../../images/bozhidar.jpg');
   background-size   : 100%;
   background-repeat : no-repeat;
 }
@@ -132,7 +132,7 @@
   -ms-transform     : rotateY(180deg) translateZ(100px);
   transform         : rotateY(180deg) translateZ(100px);
   
-  background-image  : url(https://scontent.xx.fbcdn.net/v/t1.0-9/13521871_1295393880475649_929008270138015009_n.jpg?oh=2385c27c495478d85a86fcfd6d98a844&oe=59E06F29);
+  background-image  : url('../../images/bozhidar.jpg');
   background-size   : 100%;
   background-repeat : no-repeat;
 }
@@ -144,7 +144,7 @@
   -ms-transform     : rotateY(-90deg) translateZ(100px);
   transform         : rotateY(-90deg) translateZ(100px);
   
-  background-image  : url(https://scontent.xx.fbcdn.net/v/t1.0-9/13521871_1295393880475649_929008270138015009_n.jpg?oh=2385c27c495478d85a86fcfd6d98a844&oe=59E06F29);
+  background-image  : url('../../images/bozhidar.jpg');
   background-size   : 100%;
   background-repeat : no-repeat;
 }
@@ -156,23 +156,22 @@
   -ms-transform     : rotateX(-90deg) translateZ(100px) rotate(180deg);
   transform         : rotateX(-90deg) translateZ(100px) rotate(180deg);
   
-  background-image  : url(https://scontent.xx.fbcdn.net/v/t1.0-9/13521871_1295393880475649_929008270138015009_n.jpg?oh=2385c27c495478d85a86fcfd6d98a844&oe=59E06F29);
+  background-image  : url('../../images/bozhidar.jpg');
   background-size   : 100%;
   background-repeat :no-repeat;
 }
 
-#cube div:nth-child(6)  {
-  -webkit-transform : rotateX(90deg) translateZ(100px);
-  -moz-transform    : rotateX(90deg) translateZ(100px);
-  -o-transform      : rotateX(90deg) translateZ(100px);
-  -ms-transform     : rotateX(90deg) translateZ(100px);
-  transform         : rotateX(90deg) translateZ(100px);
-  
-  background-image  : url(https://scontent.xx.fbcdn.net/v/t1.0-9/13521871_1295393880475649_929008270138015009_n.jpg?oh=2385c27c495478d85a86fcfd6d98a844&oe=59E06F29);
-  background-size   : 100%;
-  background-repeat :no-repeat;
-  text-align:center;  
-}
+    #cube div:nth-child(6) {
+        -webkit-transform: rotateX(90deg) translateZ(100px);
+        -moz-transform: rotateX(90deg) translateZ(100px);
+        -o-transform: rotateX(90deg) translateZ(100px);
+        -ms-transform: rotateX(90deg) translateZ(100px);
+        transform: rotateX(90deg) translateZ(100px);
+        background-image: url('../../images/bozhidar.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
 
 
 .container {

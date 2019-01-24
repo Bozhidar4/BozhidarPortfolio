@@ -1,0 +1,277 @@
+﻿body {
+    background: linear-gradient(to left, #66ccff , #0088cc);
+}
+/* Left die*/
+@-moz-keyframes spinningH {
+  from {
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+  }
+  to{
+    -moz-transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+@-webkit-keyframes spinningH {
+  from {
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+  }
+  to{
+    -webkit-transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+@-o-keyframes spinningH {
+  from {
+    -o-transform: rotateX(0deg) rotateY(0deg);
+  }
+  to{
+    -o-transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+@-ms-keyframes spinningH {
+  from {
+    -ms-transform: rotateX(0deg) rotateY(0deg);
+  }
+  to{
+    -ms-transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+@keyframes spinningH {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to{
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+#container {
+     margin-top: 190px;
+  -webkit-perspective : 1000px;
+  -moz-perspective    : 1000px;
+  -o-perspective      : 1000px;
+  -ms-perspective     : 1000px;
+  perspective         : 1000px;
+  float: left;
+  position: absolute;
+  margin-left: 470px;
+  -webkit-perspective-origin  : 50% 50%;
+  -moz-perspective-origin     : 50% 50%;
+  -moz-transform-origin       : 50% 50%;
+  -o-perspective-origin       : 50% 50%;
+  -ms-perspective-origin      : 50% 50%;
+  perspective-origin          : 50% 50%;
+ }
+
+.animate {
+  -webkit-animation : spinningH 6s infinite linear;
+  -moz-animation    : spinningH 6s infinite linear;
+  -o-animation      : spinningH 6s infinite linear;
+  -ms-animation     : spinningH 6s infinite linear;
+  animation         : spinningH 6s infinite linear;
+}
+
+#cube {
+  position: relative;
+  margin: 0 auto;
+  height: 100px;
+  width: 100px;
+  margin-top: 100px;
+
+  -webkit-transition  : -webkit-transform 2s linear;
+  -moz-transition     : -moz-transform 2s linear;
+  -o-transition       : -o-transform 2s linear;
+  -ms-transition      : -ms-transform 2s linear;
+  transition          : transform 2s linear;
+
+  -webkit-transform-style : preserve-3d;
+  -moz-transform-style    : preserve-3d;
+  -o-transform-style      : preserve-3d;
+  -ms-transform-style     : preserve-3d;
+  transform-style         : preserve-3d;
+}
+
+#cube>div {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  padding: 70px;
+  opacity: 0.9;
+  background-position:center center;
+}
+
+#cube div:nth-child(1) {
+  -webkit-transform : translateZ(100px);
+  -moz-transform    : translateZ(100px);
+  -o-transform      : translateZ(100px);
+  -ms-transform     : translateZ(100px);
+  transform         : translateZ(100px);
+  
+  background-image  : url(http://bbcpersian7.com/images/6-dice-number-clipart-17.jpg);
+  background-size   : 100%;
+  background-repeat : no-repeat;
+}
+
+#cube div:nth-child(2) {
+  -webkit-transform : rotateY(90deg) translateZ(100px);
+  -moz-transform    : rotateY(90deg) translateZ(100px);
+  -o-transform      : rotateY(90deg) translateZ(100px);
+  -ms-transform     : rotateY(90deg) translateZ(100px);
+  transform         : rotateY(90deg) translateZ(100px);
+  
+  background-image  : url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAADhCAMAAADmr0l2AAAAaVBMVEX///8AAADo6Ojl5eX8/PxXV1fQ0NC1tbWnp6f19fVKSkpiYmK5ubnNzc2Dg4PX19eTk5PExMQSEhKcnJxcXFx1dXW9vb0lJSXe3t5ra2vv7++QkJAXFxctLS2JiYmvr680NDQfHx87OzscZzR8AAADu0lEQVR4nO3d626qQBhGYcATWIs9qdVa23r/F7l1d++mA3P4bNLCou/6PSTzRBEGTCarJvmAm1TZoH0nYdb1DL673wGcFqMBVkw/gEU2yAoB4QlIT0B6AtITkJ6A9NjAYrlcPo7jQ7DA5eH4b7W3X63Dw6jAcu8uaetdYCATuPas2g/+oUTg+MH7XOJu6RsMBBZ3Xt+pmW80DliEeKfKwHASsIr48rz9c4oDvkaB+ag5ngZ8ivvy5+YBMGDsBHzv3ncEB3iVBOaNOzcWMP0Btj5CFjB1Bp57cw9hAYOX+M89OoeggCOLr/EdRQFnJuCDcwwKaDkFm5dCFHBrAubOMSig4Sp4zrkSCtinjF9RLrC2AZ1jUMDS5Js7x6CAUxOwdo5BAW3/53FX9Syg6WfUXS+xgLcG39Y9hAW0LCcaT0dhwEXS99A4AgbMjnFem0EDph5aNJ854YCJL+lVazwOmN1EfMf2cB4wIpx7RgOBwW/pyjeYCMyKuc/nf4+NBGbZetPkPQX+iwAFZtn159Xv/CX4Vwss8NRydlitVnV5XUUGkYGmBKQnID0B6QlIT0B6AtITkJ6A9ASkJyA9AekJSE9AegLSE5CegPQEpCcgPQHpCUhPQHoC0hOQnoD0BKQnID0B6QlIT0B6AtITkJ6A9ASkJyA9AekJSE9AegLSE5CegPQEpCcgPQHpCUhPQHoC0hOQnoD0BKQnID0B6QlIT0B6AtIT8NxuUU/e8nw/r19au4X3PQNw4WxA8loG967oZUngor3dWGvzpj6XAO6828dsHn1j+1kceO3jnXv58Yl+tSgwsg3Xzc9P9WvFgNHtDCknYgSY2Dv8tovpXl4E2Nq7qVFsM6D+FAYmtw5v7tXYz4LAXcqX59NupnxZQaBhW2bfbni9KwQcp315TrgxDQHXFiDhYhgCrizA544mfUkh4JsFmAMWFgFgZfI1dy3uYwHg0gacdTVtewFgcBnhVnY1bXsCDhQ4+HPQ+CsKuBsNXQf3JiBgxRQCbuOy9zYdTfqSQsCZBXjoaNKXFAKaTkLC08PgetBwt33sZsqXFQQWaSDisVP4mUxySY9Y0MeeqrVfSrjtupjvxUWAibsZwF3MudiT7eilgnCJOBd9N1GGffXPT/Vrxd8uBR89Ud5MJN8Pjp69PsBN9v+Sb3g9X1PK6fe39Dv6cem+hbkBLCE+ZfqXxajcvp6HbK7uAc/R3PQ/GXoC0hOQnoD0BKQnIL1fBJwWowFWTD+AQ274wEnXM/jeJlk1aOGk+gOzgSwhG79HLQAAAABJRU5ErkJggg==);
+  background-size   : 100%;
+  background-repeat : no-repeat;
+}
+
+#cube div:nth-child(3) {
+  -webkit-transform : rotateY(180deg) translateZ(100px);
+  -moz-transform    : rotateY(180deg) translateZ(100px);
+  -o-transform      : rotateY(180deg) translateZ(100px);
+  -ms-transform     : rotateY(180deg) translateZ(100px);
+  transform         : rotateY(180deg) translateZ(100px);
+  
+  background-image  : url(http://cliparting.com/wp-content/uploads/2017/02/Dice-clipart-1-clipartfest-3.gif);
+  background-size   : 100%;
+  background-repeat : no-repeat;
+}
+
+#cube div:nth-child(4) {
+  -webkit-transform : rotateY(-90deg) translateZ(100px);
+  -moz-transform    : rotateY(-90deg) translateZ(100px);
+  -o-transform      : rotateY(-90deg) translateZ(100px);
+  -ms-transform     : rotateY(-90deg) translateZ(100px);
+  transform         : rotateY(-90deg) translateZ(100px);
+  
+  background-image  : url(http://homeschoolclipart.com/wp-content/uploads/2015/04/Dice4.gif);
+  background-size   : 100%;
+  background-repeat : no-repeat;
+}
+
+#cube div:nth-child(5) {
+  -webkit-transform : rotateX(-90deg) translateZ(100px) rotate(180deg);
+  -moz-transform    : rotateX(-90deg) translateZ(100px) rotate(180deg);
+  -o-transform      : rotateX(-90deg) translateZ(100px) rotate(180deg);
+  -ms-transform     : rotateX(-90deg) translateZ(100px) rotate(180deg);
+  transform         : rotateX(-90deg) translateZ(100px) rotate(180deg);
+  
+  background-image  : url(http://homeschoolclipart.com/wp-content/uploads/2015/04/Dice5.gif);
+  background-size   : 100%;
+  background-repeat :no-repeat;
+}
+
+#cube div:nth-child(6)  {
+  -webkit-transform : rotateX(90deg) translateZ(100px);
+  -moz-transform    : rotateX(90deg) translateZ(100px);
+  -o-transform      : rotateX(90deg) translateZ(100px);
+  -ms-transform     : rotateX(90deg) translateZ(100px);
+  transform         : rotateX(90deg) translateZ(100px);
+  
+  background-image  : url(https://www.clipartsgram.com/image/1356197890-dice6.gif);
+  background-size   : 100%;
+  background-repeat :no-repeat;
+  text-align:center;  
+}
+
+/* Right die*/
+@-moz-keyframes spinning2 {
+  from {
+    -moz-transform: rotateX(360deg) rotateY(360deg);
+  }
+  to{
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+  }
+}
+
+@-webkit-keyframes spinning2 {
+  from {
+    -webkit-transform: rotateX(360deg) rotateY(360deg);
+  }
+  to{
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+  }
+}
+
+@-o-keyframes spinning2 {
+  from {
+    -o-transform: rotateX(360deg) rotateY(360deg);
+  }
+  to{
+    -o-transform: rotateX(0deg) rotateY(0deg);
+  }
+}
+
+@-ms-keyframes spinning2 {
+  from {
+    -ms-transform: rotateX(360deg) rotateY(360deg);
+  }
+  to{
+    -ms-transform: rotateX(0deg) rotateY(0deg);
+  }
+}
+
+@keyframes spinning2 {
+  from {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+  to{
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+}
+ 
+#container2 {
+   margin-top: 200px;
+  -webkit-perspective : 1000px;
+  -moz-perspective    : 1000px;
+  -o-perspective      : 1000px;
+  -ms-perspective     : 1000px;
+  perspective         : 1000px;
+  float: right;
+  position: absolute;
+  margin-left: 870px;
+  -webkit-perspective-origin  : 50% 50%;
+  -moz-perspective-origin     : 50% 50%;
+  -moz-transform-origin       : 50% 50%;
+  -o-perspective-origin       : 50% 50%;
+  -ms-perspective-origin      : 50% 50%;
+  perspective-origin          : 50% 50%;
+ }
+
+.animate2 {
+  -webkit-animation : spinning2 8s infinite linear;
+  -moz-animation    : spinning2 8s infinite linear;
+  -o-animation      : spinning2 8s infinite linear;
+  -ms-animation     : spinning2 8s infinite linear;
+  animation         : spinning2 8s infinite linear;
+}
+
+.topLeft{
+    background-color: white;
+    width: 280px; 
+    margin-top: 5px;
+} 
+
+.topLeft > button{
+    width: 150px; 
+    height: 30px; 
+    margin-left: 60px; 
+    margin-top: 20px; 
+    margin-bottom: 20px
+}
+
+.backToPortfolio{
+    background-color: white;
+    width: 280px;
+    box-shadow: 3px 3px 20px black;
+    margin-top: 5px;
+}
+
+.backToPortfolio > button{
+    width: 150px; 
+    height: 30px; 
+    margin-left: 60px; 
+    margin-top: 20px; 
+    margin-bottom: 20px
+}
